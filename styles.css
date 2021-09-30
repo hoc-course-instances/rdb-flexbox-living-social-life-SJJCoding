@@ -3,11 +3,14 @@ body {
 }
 
 .container {
-    background-color: #F8F8F8;
-    padding: 50px;
+    width: 80%;
+    max-width: 900px;
+    margin: 0 auto;
 }
 
 header {
+    background-color: #F8F8F8;
+    padding: 50px;
     display: flex;
     flex-direction: column;
     size: 3.75rem;
@@ -59,10 +62,58 @@ a:focus {
     border-bottom: 2px solid black;
 }
 
-@media only screen and (min-width: 700px) {
+
+
+  .container-flex {
+      display: flex;
+      justify-content: space-between;
+  }
+
+  .bottom {
+      display: flex;
+      width: max-content;
+  }
+  
+  main {
+      width: 75%;
+  }
+
+  main div {
+      margin-bottom: 30px;
+      background-color: rosybrown;
+  }
+
+  aside {
+      width: 25%;
+      background-color: red;
+      border: 10px solid grey;
+  }
+
+  aside div {
+      background-color: saddlebrown;
+  }
+
+  img {
+      max-width: 100%;
+      margin-bottom: 10px;
+  }
+
+  h1 {
+      text-align: center;
+  }
+
+  @media only screen and (max-width: 700px) {
     header {
         flex-direction: row;
         justify-content: space-between;
+    }
+
+    .container-flex {
+        flex-direction: column;
+    }
+
+    h1 {
+        text-align: left;
     }
 
     header p {
@@ -74,6 +125,10 @@ a:focus {
         margin-left: 20px;
     }
 
+    .container-flex {
+        flex-direction: column;
+    }
+
   }
 
   @media only screen and (max-width: 400px) {
@@ -83,9 +138,14 @@ a:focus {
     li a {
         margin: 10px;
     }
+
+    main, aside {
+        max-width: 100%;
+        width: 100%;
+    }
   }
 
-
-
-
-
+  .about-me {
+      border: 10px dotted hotpink;
+      margin-bottom: 100px;
+  }
