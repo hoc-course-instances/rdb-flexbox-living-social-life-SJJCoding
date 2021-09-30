@@ -1,0 +1,181 @@
+body {
+    margin: 0px;
+}
+
+.container {
+    width: 80%;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.container-nav {
+    display: flex;
+    flex-direction: column;
+}
+
+a {
+    color: #1792D2;
+}
+
+h1 {
+    margin: 0;
+}
+
+h2 {
+    margin: 0 auto;
+}
+
+header {
+    background-color: #f8f8f8;
+    padding-bottom: 10px;
+}
+
+header p{
+    font-family: Ubuntu, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0;
+    text-align: center;
+    color: #1792D2;
+}
+
+header h1 {
+    font-family: lora;
+    color: #143774;
+    text-align: center;
+}
+
+nav ul{
+    size: 1rem;
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    padding: 0;
+    justify-content: center;
+}
+
+nav li {
+    size: 1rem;
+    margin: 0 10px;
+}
+
+nav a {
+    font-family: Ubuntu, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-decoration: none;
+    color: #707070;
+}
+
+a:hover {
+    color: #2b2b2b;
+}
+
+a:focus {
+    color: rgb(3, 3, 3);
+}
+
+.currentpage {
+    border-bottom: 2px solid black;
+    border-radius: 3pz;
+}
+
+.article-featured {
+    padding-bottom: 20px;
+    border-bottom: 2px solid black;
+    font-family: Ubuntu;
+}
+
+.container-main {
+    display: flex;
+    flex-direction: column;
+}
+
+[role="main"] {
+    width: 100%;
+}
+
+.sidebar {
+    width: 100%;
+}
+
+
+
+
+.article-title {
+    font-family: lora;
+    color: #143774;
+}
+
+.widget-title {
+    font-family: Ubuntu;
+    color: #143774;
+}
+
+.article-recent {
+    padding-top: 20px;
+    font-family: Ubuntu, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    display: flex;
+    flex-direction: row-reverse;
+    margin-bottom: 20px;
+}
+
+.article-recent-main {
+    width: 100%;
+    height: 100%;
+}
+
+.article-recent-secondary {
+    width: 60%;
+    margin-right: 10px;
+}
+
+img {
+    width: 100%;
+}
+
+.article-read-more {
+    font-family: Ubuntu, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-decoration: none;
+    color: #1792D2;
+}
+
+.widget-recent-post-title {
+    font-family: Ubuntu, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-decoration: none;
+    color: #143774;
+}
+
+.sidebar-widget {
+    padding: 5px;
+    border: 10px solid grey;
+    margin-bottom: 30px;
+}
+
+footer {
+    background-color: #143774;
+    text-align: center;
+    color: white;
+    padding: 10px;
+    font-family: lora;
+}
+
+@media only screen and (min-width: 700px) {
+    .container-nav {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .container-main {
+        flex-direction: row;
+    }
+
+        
+    [role="main"] {
+        width: 75%;
+    }
+    
+    .sidebar {
+        width: 25%;
+        margin: 0 10px;
+    }
+
+
+}
+
